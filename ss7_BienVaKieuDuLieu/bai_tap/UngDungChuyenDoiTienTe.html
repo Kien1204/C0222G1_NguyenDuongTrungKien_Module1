@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label> Amount </label><br>
+    <label><input type="text" id="Dauvao"></label>
+    <label> From Currency</label>
+    <select name="" id="luachon1">
+        <option value="a">Vnđ</option>
+        <option value="b">Usd</option>
+    </select>
+    <label> To Currency </label>
+    <select name="" id="luachon2">
+        <option value="a"> Vnđ</option>
+        <option value="b"> Usd</option>
+    </select>
+    <button onclick="abc()">Convert</button>
+    <script>
+        function abc() {
+            let giatri = document.getElementById('Dauvao').value;
+            alert(giatri)
+            let select1 = document.getElementById('luachon1').value;
+            let select2 = document.getElementById('luachon2').value;
+            if (select1 == select2) {
+                alert(giatri);
+            }
+            if (select1 == "a" && select2 == "b") {
+                alert(giatri / 24000);
+            }
+            if(select1=="b"&& select2=="a")
+                alert(giatri*24000)
+        }
+    </script>
+
+</form>
+</body>
+</html>
