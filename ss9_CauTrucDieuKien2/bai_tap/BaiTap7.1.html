@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("nhập số a"))
+    let b =parseFloat(prompt("nhập số b"))
+    let c = parseFloat(prompt("nhập số c"))
+    let x1=parseFloat()
+    let x2 = parseFloat()
+    delta= Math.pow(b,2)-(4*a*c)
+    if (delta==0){
+        alert("phuong trinh có nghiệm kép" + (-b/a))
+    } else if (delta>0){
+     x1=(-b + Math.sqrt(delta)) / (2 * a)
+     x2=(-b - Math.sqrt(delta)) / (2 * a)
+        alert("phuong trinh có 2 nghiem phan biet "+x1+ " && " +x2)
+    }else alert("phuong trinh vo nghiem")
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ-->
+<script>
+    let Total = parseFloat()
+    let midterm = parseFloat(prompt("nhập điểm giữa kỳ "))
+    let Finalterm = parseFloat(prompt("nhập điểm cuối kỳ "))
+    let Test = parseFloat(prompt("nhập điểm bài kiểm tra"))
+    total = (Test + midterm + Finalterm) / 3
+    if (total >= 8.0) {
+        alert("Học Sinh Giỏi")
+    } else if (total >= 7.5) {
+        alert("Hoc Sinh Khá")
+    } else if (total >= 5) {
+        alert("hoc sinh trung binh")
+    } else if (total < 5){
+        alert("hoc sinh yếu")
+    }else alert("kém")
+
+</script>
+
+
+</body>
+</html>
