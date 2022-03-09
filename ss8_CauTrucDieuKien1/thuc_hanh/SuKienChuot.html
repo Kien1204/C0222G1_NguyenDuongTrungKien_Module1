@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        form style { height: 500px;
+        width: 500px}
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <img  id="myimg" src="https://thuviendohoa.vn/upload/images/items/hinh-anh-trai-bong-da-png-452.webp" style="width: 400px" height="400px">
+    <p> click button move the right </p>
+    <input type="button" value="click me "onclick="moveRight()">
+</form>
+    <script>
+        let imgobj=null;
+        imgobj=document.getElementById("myimg");
+        function init() {
+            imgobj= document.getElementById('myimg');
+            imgobj.style.position = 'relative';
+            imgobj.style.left = '0px';
+        }
+        function moveRight() {
+            imgobj.style.left = parseInt(imgobj.style.left) + 10 + 'px';
+        }
+        window.onload=init;
+    </script>
+
+
+</body>
+</html>
