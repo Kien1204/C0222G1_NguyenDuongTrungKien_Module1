@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a  = parseInt(prompt(" nhập số lượng "))
+    let b=[]
+    for (i=0;i<a;i++ ) {
+        b[i] = parseInt(prompt())
+        b.sort(function (a,b) {
+            return (b-a)
+        })
+    }
+    document.write(b)
+</script>
+</body>
+</html>
