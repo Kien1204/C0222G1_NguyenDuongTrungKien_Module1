@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function footToMeter(foot) {
+        return 0.305 * foot
+    }
+    function meterToFoot(meter) {
+        return 3.279 * meter
+    }
+    let inputfoot = parseFloat(prompt("nhập vào giá trị foot cần chuyển đổi sang met : "))
+    let inputmet = parseFloat(prompt("nhập vào giá trị met cần chuyển đổi sang foot : "))
+    let resultmet = footToMeter(inputfoot);
+    let resultfoot= meterToFoot(inputmet);
+    alert(" giá trị met sau khi được chuyển đổi từ foot là : "+ resultmet)
+    alert(" giá trị foot sau khi được chuyển đổi từ met là : "+ resultfoot)
+</script>
+</body>
+</html>
