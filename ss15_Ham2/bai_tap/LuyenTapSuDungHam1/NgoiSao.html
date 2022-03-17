@@ -8,7 +8,6 @@
 <script>
     let Stars = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
     let Constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
-
     function search(value) {
         for (i = 0; i < Stars.length; i++) {
             if (value == Stars[i]) {
@@ -16,9 +15,13 @@
             }
         }
     }
-
     let input = prompt("nhập vào ngôi sao tìm kiếm ")
-    alert(search(input))
+    let result = search(input)
+    if (result==undefined){
+        alert("không tìm thấy ")
+    } else {
+        alert(result)
+    }
 </script>
 </body>
 </html>

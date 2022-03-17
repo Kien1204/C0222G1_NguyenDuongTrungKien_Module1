@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+     function Area(R1) {
+     return Math.pow(R1 ,2)*3.14
+     }
+     function perimeter(R2) {
+      return 2*R2*3.14
+     }
+     let inputR1 = parseFloat(prompt("nhập bán kính để tính diện tích"))
+     let inputR2 = parseFloat(prompt("nhập bán kính để tính chu vi"))
+     let resultArea=Area(inputR1)
+     let resultperimeter=perimeter(inputR2)
+     alert("Diện  hình tròn là " + resultArea);
+     alert("Chu vi hình tròn là " + resultperimeter)
+ </script>
+</body>
+</html>
