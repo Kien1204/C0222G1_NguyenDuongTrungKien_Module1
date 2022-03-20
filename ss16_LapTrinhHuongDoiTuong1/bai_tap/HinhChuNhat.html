@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+     class Rectangle  {
+           constructor(width,height) {
+               this.width=width
+               this.height=height
+           }
+        caculate1(){
+            return this.width * this.height;
+        }
+        caculate2(){
+            return (this.height + this. height)+(this.width + this.width);
+        }
+        caculate3() {
+            for (i=1 ; i <= this.height ;i++){
+                for (j=1 ;j <= this.width ;j++){
+                    document.write('#');
+                }
+                document.write("<br/>");
+            }
+        }
+      display() {
+            console.log("width = " + this.width + " height =  " + this.height);
+            console.log("Area: " + this.caculate1());
+            console.log("chu vi la:" + this.caculate2());
+            document.write(this.caculate3());
+        }
+    }
+
+    function main() {
+        let rec1 = new Rectangle(9, 5);
+        console.log("tinh dien tich : ");
+        rec1.display();
+    }
+    main();
+</script>
+</body>
+</html>
