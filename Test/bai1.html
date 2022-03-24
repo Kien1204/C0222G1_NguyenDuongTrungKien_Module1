@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+     let salary = prompt();
+      if (salary == 15){
+          let netIncome = salary-(salary/100)*20
+          let tax  = salary/100*20
+          console.log(" thuế thu nhập cá nhân là " + tax)
+          console.log("thu nhập thực nhận là " + netIncome)
+      }else if (salary>7 && salary <15){
+           netIncome = salary-(salary/100)*10
+           tax  = salary/100*10
+         console.log(" thuế thu nhập cá nhân là " + tax)
+          console.log("thu nhập thực nhận là " + netIncome)
+      } else if (salary<7){
+          netIncome = salary-(salary/100)*5
+          tax  = salary/100*5
+          console.log(" thuế thu nhập cá nhân là " + tax)
+          console.log("thu nhập thực nhận là " + netIncome)
+      } else{
+         console.log("không đúng ")
+      }
+ </script>
+</body>
+</html>

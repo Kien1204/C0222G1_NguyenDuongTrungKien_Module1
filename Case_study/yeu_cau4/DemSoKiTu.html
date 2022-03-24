@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s = "cabca"
+     let s1 = s.split('').sort()
+    let s2 = [];
+    for (i = 0, j=1; i<s.length;i++,j++){
+            if (s1[i]!==s1[j])
+                s2.push(s1[i])
+    }
+    console.log(s2)
+</script>
+</body>
+</html>

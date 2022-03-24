@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s1 = "abcd"
+    let s2 = "addca"
+    let arrS1 = [];
+    arrS1 = s1.split('');
+    let count = 0;
+    while (arrS1.length != 0){
+        let a = arrS1.shift();
+        for (let i = 0; i < s2.length; i++) {
+            if (s2.charAt(i).includes(a)){
+                s2.slice(i, i + 1);
+                count++;
+                break;
+            }
+        }
+    }
+
+    alert(count);
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMaxMin(m, n) {
+       arr = []
+        let arr1 = []
+        for (let i = 0; i < m; i++) {
+            arr.push([])
+            for ( let j = 0; j < n; j++) {
+                arr[i][j]=parseInt(prompt());
+                arr1.push(arr[i][j]);
+            }
+        }
+        arr1 = arr1.sort(function (a, b) {
+            return a - b
+        })
+         let max = arr1[arr1.length - 1]
+        let min = arr1[0]
+        return [min,max]
+    }
+   alert(findMaxMin(parseInt(prompt('m')),parseInt(prompt('n'))))
+</script>
+</body>
+</html>

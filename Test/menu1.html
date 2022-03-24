@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let menu = parseInt(prompt(' 1 cafe' + '\n' + '2 nước chanh ' + '\n'+ '3 nước cam '+ '4 thoát '))
+    let price = [100,200,300,400];
+    do {
+        for ( i = 0 ; i< price.length;i++){
+            if (menu !==4){
+                let amount = parseInt(prompt("nhập số lượng "))
+                let sum  = amount *price[menu-1]
+                alert(sum)
+            }else
+                break;
+    }
+
+    }while (true)
+
+</script>
+</body>
+</html>
